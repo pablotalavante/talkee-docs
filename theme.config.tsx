@@ -28,9 +28,9 @@ const config: DocsThemeConfig = {
   // Tema y modo oscuro
   darkMode: true,
   nextThemes: {
-    defaultTheme: 'system',
-    forcedTheme: undefined,
-    themes: ['light', 'dark']
+    defaultTheme: 'light',
+    forcedTheme: 'light',
+    // theme: ['light', 'dark']
   },
   primaryHue: {
     dark: 200,
@@ -130,10 +130,6 @@ const config: DocsThemeConfig = {
         {/* Componente de pie de página personalizado */}
       </footer>
     ),
-  },
-
-  feecback: {
-    content: "¿Alguna pregunta?"
   },
 
   // Selector de tema
