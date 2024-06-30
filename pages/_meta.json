@@ -1,0 +1,21 @@
+{
+  "index": "¿Qué es talkee?",
+  "intro": "Primeros pasos",
+  "general": "General",
+  "configuration": "Configurar talkee",
+  "sources": "Fuentes",
+  "leads": "Contacto",
+  "interface": "Interfaz",
+  "embed": "Integración",
+  "advanced": "Guías avanzadas",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}

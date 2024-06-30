@@ -1,0 +1,38 @@
+.codeBlockWrapper {
+  background-color: #f4f4f4;
+  /* Fondo gris claro típico de bloques de código */
+  border: 1px solid #ddd;
+  /* Borde sutil */
+  border-radius: 4px;
+  /* Esquinas redondeadas */
+  padding: 1em;
+  /* Espacio interno */
+  margin: 1em 0;
+  /* Margen arriba y abajo */
+  font-family: monospace;
+  /* Fuente monoespaciada */
+  font-size: 14px;
+  /* Tamaño de fuente típico para código */
+  line-height: 1.5;
+  /* Espaciado entre líneas */
+  overflow-x: auto;
+  /* Permite scroll horizontal si es absolutamente necesario */
+  max-width: 100%;
+  /* Asegura que no exceda el ancho del contenedor */
+}
+
+.codeBlockWrapper pre {
+  white-space: pre-wrap;
+  /* Permite que el texto se ajuste */
+  word-break: break-all;
+  /* Rompe palabras largas si es necesario */
+  word-wrap: break-word;
+  /* Alternativa para algunos navegadores */
+  margin: 0;
+  /* Elimina márgenes por defecto del pre */
+}
+
+.codeBlockWrapper code {
+  display: block;
+  /* Asegura que el código ocupe todo el ancho */
+}

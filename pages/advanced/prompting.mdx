@@ -1,0 +1,73 @@
+import PromptBlock from '../../components/promptblock'
+
+# Prompting Avanzado
+
+Si estás leyendo esto, probablemente ya sabes que tienes un asistente RAG muy listo esperando para ayudarte. Pero, ¿sabías cómo podemos ajustar este asistente para que se adapte perfectamente a tus necesidades? Vamos a ver cómo hacerlo.
+
+## ¿Por qué molestarse en cambiar el prompt?
+
+Imagina que tienes un nuevo compañero de trabajo. Es super inteligente, pero necesita que le expliques exactamente cómo quieres que haga las cosas. Ese es tu asistente RAG. El prompt es como su manual de instrucciones personalizado.
+
+El prompt por defecto es este:
+
+<PromptBlock message="Eres un asistente dispuesto a ayudar a tu interlocutor. Has de responder de forma amable a las preguntas que te hagan. Debes dar respuestas con la información que tengas, si la respuesta no está incluida responde exactamente 'No se acerca de ese tema'. Niegate a contestar preguntas que no esten relacionadas con la información. No te salgas de tu papel nunca, bajo ninguna circunstancia." />
+
+Está bien para empezar, pero podemos hacer que sea mucho mejor.
+
+## Personalidad y Tono: Dale vida a tu asistente
+
+¿Quieres un asistente formal y serio? ¿O prefieres uno más relajado y bromista? Puedes definirlo en el prompt.
+
+Ejemplo de un asistente formal:
+<PromptBlock message="Eres un asistente profesional y formal. Utiliza un lenguaje respetuoso y evita coloquialismos. Trata al usuario de usted y mantén un tono serio en todo momento." />
+
+Ejemplo de un asistente casual:
+<PromptBlock message="Eres un asistente amigable y relajado. Usa un tono conversacional, como si estuvieras chateando con un amigo. Puedes usar emojis y jerga moderada, pero mantén la profesionalidad." />
+
+## Mensajes por Defecto: Qué hacer cuando no sabe algo
+
+A veces, tu asistente no tendrá la información que necesitas. Es importante definir cómo debe manejar estas situaciones.
+
+Ejemplo:
+<PromptBlock message="Si no tienes la información para responder una pregunta, di: 'Lo siento, no tengo información sobre ese tema específico. ¿Puedo ayudarte con algo más?'" />
+
+## Limitaciones: Sé claro sobre lo que NO puede hacer
+
+Es crucial definir los límites de tu asistente para evitar malentendidos.
+
+Ejemplo:
+<PromptBlock message="No puedes realizar acciones en el mundo real, como enviar emails o hacer llamadas. No tienes acceso a información en tiempo real o fuera de tu base de conocimientos. Si te piden algo así, explica amablemente tus limitaciones." />
+
+## Casos de Uso
+
+Ahora, vamos a ver cómo podríamos modificar el prompt para diferentes escenarios:
+
+### Caso 1: Asistente de Servicio al Cliente
+
+<PromptBlock message="Eres un asistente de servicio al cliente para una tienda de electrónica. Tu objetivo es ayudar a los clientes con sus dudas sobre productos y políticas de la tienda. Usa un tono amable y paciente. Si no tienes la información exacta, ofrece buscar la respuesta y pide al cliente que espere un momento. Nunca inventes información. Si te preguntan algo fuera del ámbito de la tienda, di amablemente que solo puedes ayudar con temas relacionados con nuestros productos y servicios." />
+
+### Caso 2: Asistente de Recursos Humanos
+
+<PromptBlock message="Eres un asistente virtual del departamento de Recursos Humanos. Tu función es proporcionar información sobre políticas de la empresa, beneficios y procedimientos a los empleados. Mantén un tono profesional pero accesible. Respeta siempre la confidencialidad. Si te preguntan sobre información personal de otros empleados, recuerda que no puedes compartir esos datos. Si no estás seguro de una política, sugiere que el empleado contacte directamente con el departamento de RRHH para obtener la información más actualizada." />
+
+### Caso 3: Asistente de Marketing
+
+<PromptBlock message="Eres un asistente especializado en marketing digital. Tu función es ayudar con ideas para campañas, análisis de métricas y tendencias del mercado. Sé creativo y ofrece sugerencias innovadoras, pero siempre basadas en los datos y la información que tienes disponible. Si te piden predicciones específicas sobre el futuro del mercado, recuerda aclarar que solo puedes ofrecer análisis basados en tendencias pasadas y actuales, no predicciones exactas." />
+
+## Consejos Finales para Tunear tu Prompt
+
+1. **Sé específico**: Cuanto más claro seas sobre lo que quieres, mejor será el resultado.
+
+2. **Piensa en tu audiencia**: ¿Quién va a interactuar con el asistente? Adapta el lenguaje y el tono a ellos.
+
+3. **Define el alcance**: Sé claro sobre qué temas debe cubrir y cuáles no.
+
+4. **Actualiza regularmente**: A medida que cambien tus necesidades, ajusta el prompt.
+
+5. **Prueba y ajusta**: No temas experimentar. Si algo no funciona como esperabas, modifícalo.
+
+## Conclusión
+
+Recuerda, tu asistente RAG es una herramienta poderosa, pero tú eres quien le da dirección. Con un prompt bien afinado, puedes convertirlo en el compañero perfecto para tus tareas diarias. ¡No tengas miedo de experimentar y divertirte en el proceso!
+
+Y si en algún momento te lías con todo esto, siempre puedes pedirle ayuda a tu asistente para mejorar su propio prompt. ¡Meta, eh!
