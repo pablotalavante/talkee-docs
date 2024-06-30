@@ -32,14 +32,14 @@ const config: DocsThemeConfig = {
     forcedTheme: 'light',
     // theme: ['light', 'dark']
   },
-  primaryHue: {
-    dark: 200,
-    light: 200
-  },
-  primarySaturation: {
-    dark: 100,
-    light: 100
-  },
+  // primaryHue: {
+  //   dark: 200,
+  //   light: 200
+  // },
+  // primarySaturation: {
+  //   dark: 100,
+  //   light: 100
+  // },
 
   // Barra de navegación
   logo,
@@ -75,7 +75,7 @@ const config: DocsThemeConfig = {
   // Barra lateral
   sidebar: {
     defaultMenuCollapseLevel: 2,
-    autoCollapse: false,
+    // autoCollapse: false,
     titleComponent: ({ title, type }) => <>{title}</>,
     toggleButton: false,
   },
@@ -87,7 +87,7 @@ const config: DocsThemeConfig = {
   toc: {
     float: true,
     title: 'En esta página',
-    backToTop: true,
+    // backToTop: true,
   },
 
   // Enlace de edición
@@ -133,20 +133,20 @@ const config: DocsThemeConfig = {
   },
 
   // Selector de tema
-  themeSwitch: {
-    component: ({ className }) => (
-      <div className={className}>
-        {/* Componente de selector de tema personalizado */}
-      </div>
-    ),
-    useOptions() {
-      return {
-        light: 'Claro',
-        dark: 'Oscuro',
-        system: 'Sistema'
-      };
-    },
-  },
+  // themeSwitch: {
+  //   component: ({ className }) => (
+  //     <div className={className}>
+  //       {/* Componente de selector de tema personalizado */}
+  //     </div>
+  //   ),
+  //   useOptions() {
+  //     return {
+  //       light: 'Claro',
+  //       dark: 'Oscuro',
+  //       system: 'Sistema'
+  //     };
+  //   },
+  // },
 
   // Favicon (experimental)
   faviconGlyph: '',
