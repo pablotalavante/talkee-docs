@@ -56,7 +56,7 @@ const config: DocsThemeConfig = {
   // Búsqueda
   search: {
     emptyResult: () => <div>No se encontraron resultados</div>,
-    loading: () => <div>Cargando...</div>,
+    loading: () => 'Cargando...',
     error: 'Ha ocurrido un error',
     placeholder: 'Buscar en la documentación',
   },
